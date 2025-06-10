@@ -48,15 +48,15 @@ TelcoChurnPredictor/
 
 
 
----
 
 ## 🛠️ Installation & Running Locally
 
 ### 1. Clone the repository
 
-```bash
+
 git clone https://github.com/shivamk250199/customer-churn-.git
 cd customer-churn
+
 2. Create and activate virtual environment
 Windows:
 bash
@@ -73,6 +73,7 @@ bash
 
 
 pip install -r requirements.txt
+
 4. Run the Flask app
 bash
 
