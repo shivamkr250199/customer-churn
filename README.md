@@ -109,5 +109,7 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ✨ Author
 Shivam Kumar
+
 📧 emsail: shivamshandaliya1998@gmail.com
+
 📍 India
