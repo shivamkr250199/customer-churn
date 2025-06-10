@@ -1,0 +1,7 @@
+ Flask
+scikit-learn
+pandas
+numpy
+xgboost
+lightgbm
+imbalanced-learn

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telco Churn Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="form-container">
+      <h1>🔮 Telco Customer Churn Prediction</h1>
+      <form method="post" action="/predict">
+        {% for feature in features %}
+          <div class="input-group">
+            <label>{{ feature.replace('_', ' ') }}</label>
+            <input type="text" name="{{ feature }}" required>
+          </div>
+        {% endfor %}
+        <button type="submit">Predict Churn</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
