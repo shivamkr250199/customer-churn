@@ -56,24 +56,22 @@ TelcoChurnPredictor/
 
 ```bash
 git clone https://github.com/shivamk250199/customer-churn-.git
-cd telco-churn-predictor
+cd customer-churn
 2. Create and activate virtual environment
 Windows:
 bash
-Copy
-Edit
+
 python -m venv venv
 venv\Scripts\activate
 macOS/Linux:
 bash
-Copy
-Edit
+
 python3 -m venv venv
 source venv/bin/activate
 3. Install dependencies
 bash
-Copy
-Edit
+
+
 pip install -r requirements.txt
 4. Run the Flask app
 bash
