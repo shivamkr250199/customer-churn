@@ -21,13 +21,18 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     input_data = []
+
     for feature in feature_names:
         value = request.form[feature]
+
         # Encode categorical values if encoder exists
         if feature in encoders:
+            if value not in encoders[feature].classes_:
+                return f"Invalid input: '{value}' is not a valid option for '{feature}'"
             value = encoders[feature].transform([value])[0]
         else:
             value = float(value)
+
         input_data.append(value)
 
     prediction = model.predict([input_data])[0]
@@ -35,6 +40,4 @@ def predict():
     return render_template('result.html', result=result)
 
 if __name__ == '__main__':
-   app.run(debug=True)
-
-
+    app.run(debug=True)
