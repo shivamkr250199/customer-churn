@@ -6,7 +6,7 @@ A machine learning web application to predict whether a telecom customer is like
 
 ## 🚀 Live Demo
 
-🌐 [Deployed on Render](#) *(replace with your actual Render URL)*
+🌐 [Deployed on Render](#) *(https://customer-churn-6.onrender.com)*
 
 ---
 
